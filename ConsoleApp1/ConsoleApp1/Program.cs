@@ -56,16 +56,17 @@ namespace ConsoleApp1
                 }
             }
 
-            Console.WriteLine();
+            Console.WriteLine("{");
             for (int i = 0; i < 12; i++)
             {
+                Console.Write("{");
                 for (int k = 0; k < 12; k++)
                 {
-                    Console.Write(mas[i, k] + "\t");
+                    Console.Write(mas[i, k] + ",\t");
                 }
-                Console.WriteLine();
+                Console.WriteLine("},");
             }
-
+            Console.WriteLine("}");
             //Zadanie1
             Console.WriteLine("Minimal value = " + minNum(mas));
             Console.WriteLine();
@@ -90,8 +91,8 @@ namespace ConsoleApp1
             Console.WriteLine();
 
             //Zadanie 4
-
-
+            int s = SummUp(mas);
+            Console.WriteLine($"Summ = {s}");
         }
     }
 }

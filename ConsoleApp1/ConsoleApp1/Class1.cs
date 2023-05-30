@@ -82,6 +82,19 @@ namespace ConsoleApp1
             return W;
         }
 
+        public static int SummUp(int[,] mas)
+        {
+            int s = 0;
+            for (int i = 0; i < 6; i++)
+            {
+                for (int k = 0; k < 12; k++)
+                {
+                    if (mas[i, k] > 0)
+                        s += mas[i, k];
+                }
+            }
+            return s;
+        }
 
 
     }
